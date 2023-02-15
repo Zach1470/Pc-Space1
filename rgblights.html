@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #000;
+}
+.container {
+	background-color: #000;
+	height: 900px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+	color: #FFF;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('assets/Home down.jpg','assets/Pc Part Down.jpg','assets/How to Build down.jpg','assets/Pictures down.jpg')">
+<div class="container">
+  <p><img src="assets/pcspace_banner.jpg" alt="Banner" width="735" height="125" border="1" /></p>
+  <p><a href="index1.html" target="_top" onclick="MM_nbGroup('down','group1','Home','assets/Home down.jpg',1)" onmouseover="MM_nbGroup('over','Home','assets/Home down.jpg','assets/Home down.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="assets/Home Up.jpg" alt="Home Bar" name="Home" border="0" id="Home" onload="" /></a> <a href="pcparts.html" target="_top" onclick="MM_nbGroup('down','group1','Pc_parts','assets/Pc Part Down.jpg',1)" onmouseover="MM_nbGroup('over','Pc_parts','assets/Pc Part Down.jpg','assets/Pc Part Down.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="assets/Pc Part Up.jpg" alt="Pc Parts" name="Pc_parts" border="0" id="Pc_parts" onload="" /></a> <a href="howtobuild.html" target="_top" onclick="MM_nbGroup('down','group1','How_to_Build','assets/How to Build down.jpg',1)" onmouseover="MM_nbGroup('over','How_to_Build','assets/How to Build down.jpg','assets/How to Build down.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="assets/How to Build up.jpg" alt="assets/How to Build down.jpg" name="How_to_Build" border="0" id="How_to_Build" onload="" /></a> <a href="pictures.html" target="_top" onclick="MM_nbGroup('down','group1','Pictures','assets/Pictures down.jpg',1)" onmouseover="MM_nbGroup('over','Pictures','assets/Pictures down.jpg','assets/Pictures down.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="assets/Pictures Up.jpg" alt="assets/Pictures down.jpg" name="Pictures" border="0" id="Pictures" onload="" /></a></p>
+  <hr width="730" size="3" />
+  <p></p>
+  <h1>RGB </h1>
+  <p>RGB (Red Green Blue) is a type of lighting technology used in many computer systems and parts, including cases, keyboards, mice, and monitors. RGB lighting allows users to change the color and intensity of the light emitted by their computer system, often through the use of software or physical buttons on the device.</p>
+<p>RGB lighting can be used to add a personalized touch to a computer system, or to create a specific mood or atmosphere. Many computer components with RGB lighting also has the ability to display a wide range of colors and patterns, including static colors, color-cycling, and even reactive lighting that changes in response to system activity or music.</p>
+<blockquote>
+  <p><img src="assets/partner01.jpg" width="398" height="261" align="right" /></p>
+  <p>In addition to aesthetics, RGB lighting can also be used to improve visibility in low-light environments, or to indicate the status of a system or device. </p>
+  <p>Here is a website where you can make custom <a href="https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=DChcSEwilp5fLg4T8AhWg_-MHHRxDABQYABAEGgJ5bQ&amp;ohost=www.google.com&amp;cid=CAESbOD2R2IuNLgsIibJ2uWbEkM3OCwLjsjcwhHve8X5csl8fj3nSygTQPFV16TQUBYhdNxU66RapV5Eq40FpB8VCosmOxyQZE-FZqotwJGb3QZQ1_62h3vMnE8KuMXESCvUy1haBR4ptgMNHz6T5A&amp;sig=AOD64_1R5R-QR064u64CIXMwTLcHZfsjug&amp;q&amp;adurl&amp;ved=2ahUKEwiW6o7Lg4T8AhWYrYkEHYPzC4MQ0Qx6BAgJEAE">RGB PCs</a>.</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <hr width="700" />
+  <p>Contact</p>
+  <p> Email: <a href="mailto:manager@pcspace.com">CEO of PcSpace</a></p>
+  <p>&nbsp;</p>
+</blockquote>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
